@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brightpath AI — IT consulting, web development, mobile apps, e-commerce, ERP solutions, and system scaling for startups and local businesses in the USA, Europe, and Asia Pacific.">
+  <title>Brightpath AI — IT Consulting & Services</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       ANNOUNCEMENT STRIP
+       ============================================ -->
+  <div class="announcement announcement-pulse">
+    Now accepting orders from the USA, Europe & Asia Pacific
+  </div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="160" height="160" rx="32" fill="#0A1530" />
+            <path d="M60 140 L100 80 L140 140" stroke="#F59E0B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <circle cx="80" cy="110" r="6" fill="#F59E0B" />
+            <circle cx="120" cy="90" r="6" fill="#F59E0B" />
+          </svg>
+        </div>
+        <a href="#home" class="logo-text">Brightpath AI</a>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#case-studies" class="nav-link">Case Studies</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-primary">Book a Consultation <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <div style="margin-top: 1rem; border-top: 1px solid var(--border-light); padding-top: 1rem;">
+      <a href="#contact" class="cta-btn" style="display:block;padding:0.75rem 1rem;border-radius:1rem;text-align:center;font-weight:600;color:#0A1530;background:#F59E0B;margin-top:0.5rem;">Book a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span></span> 4.9 ★ Client Rating
+          </div>
+          <h1>IT Consulting That Scales<span class="amber-text">With Your Vision</span></h1>
+          <p>
+            We help startups and local businesses in the USA, Europe, and Asia Pacific launch fast, modern MVPs and scale securely. From first line of code to production deployment — we've got you covered.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Book a Consultation <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></a>
+            <a href="tel:+1999999999" class="btn-outline">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM3 4a2 2 0 00-2 2v3a2 2 0 002 2h3a2 2 0 002-2V4a2 2 0 00-2-2H3z"></path></svg>
+              +1999999999
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- SVG dashboard-style mockup (no external image dependency) -->
+          <div class="illustration" style="background: var(--navy-800);">
+            <svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0A1530" />
+                  <stop offset="100%" stop-color="#0F1B3D" />
+                </linearGradient>
+              </defs>
+              <rect width="800" height="600" rx="40" fill="url(#heroGrad)" />
+              <!-- Dashboard cards -->
+              <rect x="60" y="80" width="220" height="140" rx="12" fill="#15203B" />
+              <rect x="300" y="80" width="220" height="140" rx="12" fill="#15203B" />
+              <rect x="540" y="80" width="200" height="140" rx="12" fill="#15203B" />
+              <!-- Amber accents -->
+              <rect x="80" y="100" width="60" height="6" rx="3" fill="#F59E0B" />
+              <rect x="320" y="100" width="40" height="6" rx="3" fill="#38BDF8" />
+              <rect x="560" y="100" width="30" height="6" rx="3" fill="#F59E0B" />
+              <!-- Sky accents -->
+              <rect x="80" y="130" width="40" height="4" rx="2" fill="#38BDF8" />
+              <rect x="320" y="130" width="50" height="4" rx="2" fill="#38BDF8" />
+              <rect x="560" y="130" width="35" height="4" rx="2" fill="#38BDF8" />
+              <!-- Bottom row -->
+              <rect x="60" y="260" width="340" height="120" rx="12" fill="#15203B" />
+              <rect x="420" y="260" width="320" height="120" rx="12" fill="#15203B" />
+              <rect x="80" y="280" width="80" height="8" rx="3" fill="#F59E0B" />
+              <rect x="440" y="280" width="100" height="8" rx="3" fill="#38BDF8" />
+              <!-- Decorative -->
+              <circle cx="100" cy="450" r="80" fill="#F59E0B" opacity="0.1" />
+              <circle cx="700" cy="500" r="100" fill="#38BDF8" opacity="0.1" />
+            </svg>
+          </div>
+          <div class="rating-badge">
+            <span></span> 4.9 ★
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES
+         ============================================ -->
+    <section id="services" class="section services">
+      <div class="page-container">
+        <div class="services-header">
+          <div class="badge-amber">What we build</div>
+          <h2>Services</h2>
+          <p>Everything you need to digitize and grow your business.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Featured (navy-900) -->
+          <div class="service-card featured">
+            <div class="icon-wrapper icon-amt">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Modern, SEO-optimized websites built for speed and scale.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+
+          <!-- Card 2: White -->
+          <div class="service-card">
+            <div class="icon-wrapper icon-sky">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>Cross-platform mobile applications for iOS and Android.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+
+          <!-- Card 3: White -->
+          <div class="service-card">
+            <div class="icon-wrapper icon-amt">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <h3>E-Commerce</h3>
+            <p>Online stores with payment integration and inventory management.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+
+          <!-- Card 4: White -->
+          <div class="service-card">
+            <div class="icon-wrapper icon-sky">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+            <h3>ERP Solutions</h3>
+            <p>Enterprise resource planning tailored to your business workflows.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+
+          <!-- Card 5: White -->
+          <div class="service-card">
+            <div class="icon-wrapper icon-amt">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3>System Scaling</h3>
+            <p>Infrastructure that grows with you — performance and auto-scaling.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+
+          <!-- Card 6: White -->
+          <div class="service-card">
+            <div class="icon-wrapper icon-sky">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Compliance & Security</h3>
+            <p>GDPR/CCPA compliant, AES-256 encryption, and audit logging.</p>
+            <div class="explore-link">Explore more <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         HOW WE WORK
+         ============================================ -->
+    <section id="about" class="section how-we-work" style="background: var(--cream);">
+      <div class="page-container">
+        <div class="services-header">
+          <div class="badge-amber">How we work</div>
+          <h2>Our Process</h2>
+          <p>A proven four-step approach to delivering your product on time and on budget.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Discover</h3>
+              <p>We understand your goals, users, and constraints before writing a single line of code.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Design</h3>
+              <p>We plan the architecture and user experience with wireframes and prototypes.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Build</h3>
+              <p>We develop, test, and secure your product with clean, maintainable code.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Launch & Support</h3>
+              <p>We deploy, monitor, and scale with you as your business grows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TECH STACK
+         ============================================ -->
+    <section id="tech-stack" class="section tech-stack">
+      <div class="page-container">
+        <div class="services-header">
+          <div class="badge-amber">Tech stack</div>
+          <h2>Technologies we use</h2>
+          <p>A modern, battle-tested stack for every layer of your product.</p>
+        </div>
+
+        <div class="tech-logos">
+          <!-- React -->
+          <div class="tech-logo" title="React">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M6.2 17.3c-.3-.5-.5-1.1-.5-1.8 0-.6.2-1.2.5-1.7s.7-1 1.2-1.3c.4-.3.9-.4 1.4-.4h.4c.5 0 1 .1 1.4.4.5.2.9.6 1.2 1 .3.5.5 1.1.5 1.7s-.2 1.2-.5 1.8c-.3.5-.7.9-1.2 1.2s-.9.4-1.4.4h-.4c-.5 0-1-.1-1.4-.4-.5-.3-.9-.7-1.2-1.2-.4-.3-.7-.8-.9-1.4zM12 1.5c-1.3 0-2.6.2-3.8.6C4.8 3.6 3 5.8 3 8.2c0 1.2.5 2.4 1.4 3.2 1 1 2.2 1.6 3.5 1.7V20c0 .4.2.8.5 1 .3.4.8.6 1.2.6h.4c.4 0 .8-.2 1.2-.6.4-.3.6-.7.6-1v-2.9c1.3-.1 2.6-.4 3.8-.9 1.2-.6 2.1-1.6 2.6-2.8.5-1.2.5-2.5.5-3.7 0-1.6-.6-3.1-1.6-4.3-1-1.2-2.3-2-3.7-2.4-1.2-.3-2.5-.5-3.8-.5zM12 6.6c.7 0 1.3.3 1.7.8s.6 1.1.6 1.8-.2 1.5-.6 2-.9.9-1.5 1.1-1.3.4-2 .4-1.4 0-2-.6-.7-.9-.7-1.8s.2-1.5.6-2c.4-.4.9-.7 1.5-.8.6-.1 1.3-.1 2 .1z" />
+            </svg>
+          </div>
+          <!-- Next.js -->
+          <div class="tech-logo" title="Next.js">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M2 12h2v4H2zM16 2v4h2V2zm0 18v-4h2v4zm-6-6h2v4h-2z" />
+              <path d="M22 2L12 12 2 2v10l10 10 10-10z" opacity=".1" />
+            </svg>
+          </div>
+          <!-- Node.js -->
+          <div class="tech-logo" title="Node.js">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 2c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 16c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" />
+            </svg>
+          </div>
+          <!-- PostgreSQL -->
+          <div class="tech-logo" title="PostgreSQL">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 2c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 16c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" />
+            </svg>
+          </div>
+          <!-- AWS -->
+          <div class="tech-logo" title="AWS">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M11.2 2.2h1.6l-4 7.2-4-7.2h1.6l2 3.6zM12 21.8l-4-7.2h1.6l2 3.6 2-3.6h1.6zM2.2 11h19.6v2H2.2z" />
+            </svg>
+          </div>
+          <!-- Docker -->
+          <div class="tech-logo" title="Docker">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm0-14c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z" />
+            </svg>
+          </div>
+          <!-- Tailwind CSS -->
+          <div class="tech-logo" title="Tailwind CSS">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#0A1530">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 16c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TEAM
+         ============================================ -->
+    <section id="team" class="section team">
+      <div class="page-container">
+        <div class="services-header">
+          <div class="badge-amber">Meet our team</div>
+          <h2>The people behind Brightpath AI</h2>
+          <p>Experienced professionals dedicated to building secure, modern software.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team member 1 -->
+          <div class="team-card">
+            <div class="team-avatar">BD</div>
+            <h3>BrajKishore Dubey</h3>
+            <div class="role">Co-Founder & CTO</div>
+            <p class="bio">Ex-Visa, Ex-Société Générale. Leads technology strategy and architecture.</p>
+            <a href="https://www.linkedin.com/in/brajkishore-dubey-84099a42/" target="_blank" rel="noopener noreferrer" class="linkedin">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 2.487-1.55 4.616-1.55 4.237 0 5.018 3.716 5.018 7.962v8.391zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.018H3.555V9h3.562v11.431zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.21 24 24 23.227 24 22.272V1.729C24 .774 23.21 0 22.225 0zM12 2.04c2.614 0 4.742 2.114 4.742 4.722 0 2.6-2.128 4.722-4.742 4.722-2.614 0-4.742-2.122-4.742-4.722C7.258 4.154 9.386 2.04 12 2.04z"></path></svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- Team member 2 -->
+          <div class="team-card">
+            <div class="team-avatar">SD</div>
+            <h3>Sanskar Dubey</h3>
+            <div class="role">IT Operations Manager</div>
+            <p class="bio">Leads project delivery, team coordination, and client communication.</p>
+          </div>
+
+          <!-- Team member 3 -->
+          <div class="team-card">
+            <div class="team-avatar">??</div>
+            <h3>[NAME]</h3>
+            <div class="role">Senior Full-Stack Developer</div>
+            <p class="bio">Builds fast, scalable web and mobile apps. 6+ years experience.</p>
+            <div class="skill-tags" style="justify-content:center;">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Flutter</span>
+            </div>
+            <p class="placeholder-note">DUMMY DATA, replace before launch</p>
+          </div>
+
+          <!-- Team member 4 -->
+          <div class="team-card">
+            <div class="team-avatar">??</div>
+            <h3>[NAME]</h3>
+            <div class="role">Cloud & DevOps Engineer</div>
+            <p class="bio">Handles deployment, CI/CD, and infrastructure scaling. 5+ years.</p>
+            <div class="skill-tags" style="justify-content:center;">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+            <p class="placeholder-note">DUMMY DATA, replace before launch</p>
+          </div>
+
+          <!-- Team member 5 -->
+          <div class="team-card">
+            <div class="team-avatar">??</div>
+            <h3>[NAME]</h3>
+            <div class="role">Cybersecurity & ERP Specialist</div>
+            <p class="bio">Secures systems and delivers GDPR-ready ERP solutions. 7+ years.</p>
+            <div class="skill-tags" style="justify-content:center;">
+              <span class="skill-tag">GDPR</span>
+              <span class="skill-tag">ERP</span>
+              <span class="skill-tag">Security</span>
+            </div>
+            <p class="placeholder-note">DUMMY DATA, replace before launch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS
+         ============================================ -->
+    <section id="testimonials" class="section testimonials">
+      <div class="page-container">
+        <div class="services-header">
+          <div class="badge-amber">What our clients say</div>
+          <h2>Client Stories</h2>
+          <p>Hear from businesses we've helped grow.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"They delivered our web platform ahead of schedule and the communication was excellent."</p>
+            <span class="author">Michael Turner</span>
+            <span class="role">Founder, retail startup · USA</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Our ERP migration went smoothly, and GDPR compliance was handled from day one."</p>
+            <span class="author">Lena Fischer</span>
+            <span class="role">Operations Manager · Germany</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"A friendly team that understands small business needs. Our e-commerce sales doubled."</p>
+            <span class="author">Sarah Collins</span>
+            <span class="role">Owner · Australia</span>
+          </div>
+        </div>
+        <p style="text-align:center; margin-top: 2rem; font-size: 0.75rem; color: var(--text-muted-light);">
+          DUMMY TESTIMONIALS, replace with real ones before launch
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT / BOOKING
+         ============================================ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-info">
+          <div class="badge-amber">Get in touch</div>
+          <h2>Book a Consultation</h2>
+          <p>
+            Have a project in mind? Let's talk about how we can help you build it. Fill out the form and we'll respond within one business day.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM3 4a2 2 0 00-2 2v3a2 2 0 002 2h3a2 2 0 002-2V4a2 2 0 00-2-2H3z"></path></svg>
+            </div>
+            <div>
+              <p>Phone</p>
+              <a href="tel:+1999999999">+1999999999</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2z"></path></svg>
+            </div>
+            <div>
+              <p>Email</p>
+              <a href="mailto:brightpathai@gmail.com">brightpathai@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <div>
+              <p>Location</p>
+              <p>[YOUR CITY], [YOUR COUNTRY]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="consultationForm">
+            <div id="formSuccess" class="form-success" style="display:none;">
+              Thank you! We've received your message and will contact you within one business day.
+            </div>
+            <div id="formError" class="form-error" style="display:none;"></div>
+
+            <div class="row-2">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="fullName" placeholder="John Doe" class="glass-input" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="john@company.com" class="glass-input" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" name="company" placeholder="Acme Corp" class="glass-input">
+            </div>
+            <div class="form-group">
+              <label>Service Type</label>
+              <select name="serviceType" class="glass-input">
+                <option value="">Select a service</option>
+                <option>Web Development</option>
+                <option>Mobile Apps</option>
+                <option>E-Commerce</option>
+                <option>ERP Solutions</option>
+                <option>System Scaling</option>
+                <option>Compliance & Security</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="4" placeholder="Tell us about your project" class="glass-input" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FINAL CTA
+         ============================================ -->
+    <section class="final-cta section">
+      <div class="container">
+        <h2>Ready to start your project?</h2>
+        <p>Book a free 30-minute consultation. We'll discuss your goals, timeline, and how we can help.</p>
+        <a href="#contact" class="btn-primary">Book a Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg width="36" height="36" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="160" height="160" rx="32" fill="#0A1530" />
+              <path d="M60 140 L100 80 L140 140" stroke="#F59E0B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <circle cx="80" cy="110" r="6" fill="#F59E0B" />
+              <circle cx="120" cy="90" r="6" fill="#F59E0B" />
+            </svg>
+          </div>
+          <span class="logo-text">Brightpath AI</span>
+        </div>
+        <p style="color:rgba(245, 158, 11, 0.7);font-size:0.875rem;line-height:1.7;max-width:300px;">
+          Helping startups and local businesses in the USA, Europe, and Asia Pacific build secure, modern software — fast.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/brajkishore-dubey-84099a42/" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 2.487-1.55 4.616-1.55 4.237 0 5.018 3.716 5.018 7.962v8.391zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.018H3.555V9h3.562v11.431zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.21 24 24 23.227 24 22.272V1.729C24 .774 23.21 0 22.225 0zM12 2.04c2.614 0 4.742 2.114 4.742 4.722 0 2.6-2.128 4.722-4.742 4.722-2.614 0-4.742-2.122-4.742-4.722C7.258 4.154 9.386 2.04 12 2.04z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Mobile Apps</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">ERP Solutions</a></li>
+          <li><a href="#services">System Scaling</a></li>
+          <li><a href="#services">Compliance & Security</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM3 4a2 2 0 00-2 2v3a2 2 0 002 2h3a2 2 0 002-2V4a2 2 0 00-2-2H3z"></path></svg>
+            <div>
+              <p style="color:rgba(148, 163, 184, 0.6);font-size:0.75rem;margin-bottom:0.125rem;">Phone</p>
+              <a href="tel:+1999999999" style="color:#FFFFFF;font-weight:500;">+1999999999</a>
+            </div>
+          </li>
+          <li>
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2z"></path></svg>
+            <div>
+              <p style="color:rgba(148, 163, 184, 0.6);font-size:0.75rem;margin-bottom:0.125rem;">Email</p>
+              <a href="mailto:brightpathai@gmail.com" style="color:#FFFFFF;font-weight:500;">brightpathai@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Brightpath AI IT Consulting & Services. All rights reserved.</p>
+      <nav>
+        <a href="#" style="color:rgba(148, 163, 184, 0.6);font-size:0.75rem;">Privacy</a>
+        <a href="#" style="color:rgba(148, 163, 184, 0.6);font-size:0.75rem;">Terms</a>
+        <a href="#" style="color:rgba(148, 163, 184, 0.6);font-size:0.75rem;">GDPR</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
